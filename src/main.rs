@@ -22,8 +22,8 @@ fn test_private_set_intersection() {
     // Create Bloom filters for each set
     // let mut alice_bloom = Bloom::new_for_fp_rate(NUMBER_OF_ITEMS, FLASE_POSITIVE_RATE);
     // let mut bob_bloom = Bloom::new_for_fp_rate(NUMBER_OF_ITEMS, FLASE_POSITIVE_RATE);
-    let mut alice_bloom = Bloom::new(100, 5);
-    let mut bob_bloom = Bloom::new(128, 7);
+    let mut alice_bloom = Bloom::new(100, 5); // bitmap size: 100 and number of hash functions: 5
+    let mut bob_bloom = Bloom::new(128, 7); // bitmap size: 128 and number of hash functions: 7
     
     // Insert elements into Bloom filters
     for element in alice_set.iter() {
