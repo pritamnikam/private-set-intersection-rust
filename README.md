@@ -27,6 +27,12 @@ The optimal protocol depends on your specific requirements:
 
 This example is intended for educational purposes only and demonstrates the basic PSI approach using Bloom filters, which are not robust enough for real-world security applications. More sophisticated PSI protocols are necessary for reliable privacy-preserving computations.
 
+```bash
+$ cargo install
+$ cargo build
+$ cargo run
+```
+
 ## Important Caveats and Further Considerations:
 
 - Security Limitations: Understand that the toy example using Bloom filters in the previous response is not robust enough for real-world security applications. More -sophisticated PSI protocols with stronger security guarantees are necessary for reliable privacy-preserving computations.
